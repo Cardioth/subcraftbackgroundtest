@@ -1,0 +1,116 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "",
+    "expandedProjectPaths": [
+        "animations/platforms",
+        ".",
+        "animations/objects"
+    ],
+    "fileStates": {
+        "": {
+            "scaleInDock": 1
+        },
+        "#subcraftTerrainTileSet": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "subcraftObjects.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 0.33
+        },
+        "subcraftTerrainFinal.json": {
+            "scale": 0.17279444444444442,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 3862.971417548147,
+                "y": 202.5528084107641
+            }
+        },
+        "subcraftTerrainFinal.tmj": {
+            "expandedGroupLayers": [
+                4
+            ],
+            "expandedObjectLayers": [
+                6,
+                8,
+                9
+            ],
+            "scale": 0.25,
+            "selectedLayer": 5,
+            "viewCenter": {
+                "x": 6150,
+                "y": 1052
+            }
+        },
+        "subcraftTerrainFinal.tmx": {
+            "scale": 0.125,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 2632,
+                "y": 848
+            }
+        },
+        "subcraftTerrainFinal.tmx#subcraftTerrainTileSet": {
+            "scaleInDock": 0.12
+        },
+        "subcraftTerrainFinal2.json": {
+            "scale": 0.125,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 4264,
+                "y": 2000
+            }
+        },
+        "subcraftTerrainMapLarge.tmj": {
+            "expandedObjectLayers": [
+                6,
+                2
+            ],
+            "scale": 0.33,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 25112.12121212121,
+                "y": -12166.666666666668
+            }
+        },
+        "subcraftTerrainMapLarge.tmj#subcraftObjects": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1
+        },
+        "subcraftTerrainMapLarge.tmj#subcraftTerrainTileSet": {
+            "dynamicWrapping": false
+        },
+        "subcraftTerrainTileSet.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 0.12,
+            "scaleInEditor": 0.33
+        }
+    },
+    "last.imagePath": "P:/Subminers/animations/objects",
+    "map.fixedSize": false,
+    "map.lastUsedFormat": "json",
+    "map.tileHeight": 300,
+    "map.tileWidth": 300,
+    "openFiles": [
+    ],
+    "project": "subcraftTerrain.tiled-project",
+    "recentFiles": [
+        "subcraftTerrainTileSet.tsx",
+        "subcraftTerrainFinal.tmx",
+        "subcraftTerrainMapLarge.tmj",
+        "subcraftTerrainFinal2.json",
+        "subcraftObjects.tsx",
+        "subcraftTerrainFinal.json",
+        "subcraftTerrainFinal.tmj"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 300,
+        "width": 300
+    },
+    "tileset.type": 1
+}

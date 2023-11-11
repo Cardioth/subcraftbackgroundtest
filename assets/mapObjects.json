@@ -1,0 +1,440 @@
+{
+	"textures": [
+		{
+			"image": "./assets/mapObjects.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 966,
+				"h": 1092
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "platform3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 631,
+						"h": 365
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 631,
+						"h": 365
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 631,
+						"h": 365
+					}
+				},
+				{
+					"filename": "terrain10.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 307,
+						"h": 316
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 307,
+						"h": 316
+					},
+					"frame": {
+						"x": 634,
+						"y": 1,
+						"w": 307,
+						"h": 316
+					}
+				},
+				{
+					"filename": "terrain7.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 22,
+						"h": 24
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 22,
+						"h": 24
+					},
+					"frame": {
+						"x": 943,
+						"y": 1,
+						"w": 22,
+						"h": 24
+					}
+				},
+				{
+					"filename": "terrain11.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 320,
+						"h": 298
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 320,
+						"h": 298
+					},
+					"frame": {
+						"x": 634,
+						"y": 319,
+						"w": 320,
+						"h": 298
+					}
+				},
+				{
+					"filename": "shop.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 554,
+						"h": 314
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 554,
+						"h": 314
+					},
+					"frame": {
+						"x": 1,
+						"y": 368,
+						"w": 554,
+						"h": 314
+					}
+				},
+				{
+					"filename": "terrain2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 49,
+						"h": 211
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 49,
+						"h": 211
+					},
+					"frame": {
+						"x": 557,
+						"y": 368,
+						"w": 49,
+						"h": 211
+					}
+				},
+				{
+					"filename": "terrain3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 65,
+						"h": 107
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 65,
+						"h": 107
+					},
+					"frame": {
+						"x": 557,
+						"y": 581,
+						"w": 65,
+						"h": 107
+					}
+				},
+				{
+					"filename": "terrain4.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 261,
+						"h": 246
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 261,
+						"h": 246
+					},
+					"frame": {
+						"x": 624,
+						"y": 619,
+						"w": 261,
+						"h": 246
+					}
+				},
+				{
+					"filename": "skelly2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 69,
+						"h": 40
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 69,
+						"h": 40
+					},
+					"frame": {
+						"x": 887,
+						"y": 619,
+						"w": 69,
+						"h": 40
+					}
+				},
+				{
+					"filename": "terrain8.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 51,
+						"h": 46
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 51,
+						"h": 46
+					},
+					"frame": {
+						"x": 887,
+						"y": 661,
+						"w": 51,
+						"h": 46
+					}
+				},
+				{
+					"filename": "platform1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 919,
+						"h": 492
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 183,
+						"w": 919,
+						"h": 124
+					},
+					"frame": {
+						"x": 1,
+						"y": 867,
+						"w": 919,
+						"h": 124
+					}
+				},
+				{
+					"filename": "platform2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 920,
+						"h": 169
+					},
+					"spriteSourceSize": {
+						"x": 204,
+						"y": 63,
+						"w": 487,
+						"h": 94
+					},
+					"frame": {
+						"x": 1,
+						"y": 993,
+						"w": 487,
+						"h": 94
+					}
+				},
+				{
+					"filename": "ironNody.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 188,
+						"h": 98
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 188,
+						"h": 98
+					},
+					"frame": {
+						"x": 490,
+						"y": 993,
+						"w": 188,
+						"h": 98
+					}
+				},
+				{
+					"filename": "skelly4.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 105,
+						"h": 97
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 105,
+						"h": 97
+					},
+					"frame": {
+						"x": 680,
+						"y": 993,
+						"w": 105,
+						"h": 97
+					}
+				},
+				{
+					"filename": "terrain6.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 141,
+						"h": 58
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 141,
+						"h": 58
+					},
+					"frame": {
+						"x": 787,
+						"y": 993,
+						"w": 141,
+						"h": 58
+					}
+				},
+				{
+					"filename": "skelly.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 106,
+						"h": 30
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 106,
+						"h": 30
+					},
+					"frame": {
+						"x": 787,
+						"y": 1053,
+						"w": 106,
+						"h": 30
+					}
+				},
+				{
+					"filename": "terrain9.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 234,
+						"h": 164
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 234,
+						"h": 164
+					},
+					"frame": {
+						"x": 1,
+						"y": 684,
+						"w": 234,
+						"h": 164
+					}
+				},
+				{
+					"filename": "terrain1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 194,
+						"h": 161
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 194,
+						"h": 161
+					},
+					"frame": {
+						"x": 237,
+						"y": 684,
+						"w": 194,
+						"h": 161
+					}
+				},
+				{
+					"filename": "skelly3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 122,
+						"h": 119
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 122,
+						"h": 119
+					},
+					"frame": {
+						"x": 433,
+						"y": 684,
+						"w": 122,
+						"h": 119
+					}
+				},
+				{
+					"filename": "terrain5.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 136,
+						"h": 53
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 136,
+						"h": 53
+					},
+					"frame": {
+						"x": 433,
+						"y": 805,
+						"w": 136,
+						"h": 53
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:245176d6df59b45411313e0bb85b2c45:7a7ddec7ebbc50d72ba2ef4e4e29de20:72ddec9fb4368ecdbc5eef1719dec0aa$"
+	}
+}
