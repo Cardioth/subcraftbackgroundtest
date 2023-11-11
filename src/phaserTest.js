@@ -1,8 +1,12 @@
 'use strict'
 
 const config = {
-    width: 1000,
-    height: 700,
+    scale: {
+        mode: Phaser.Scale.RESIZE,
+        autoCenter: Phaser.Scale.CENTER_BOTH,
+        width: '100%',
+        height: '100%'
+    },
     type: Phaser.AUTO,
     scene: {
         preload:preload,
@@ -43,7 +47,7 @@ function create (){
 
     map.createFromObjects('aboveTerrain', map.tilesets.map(t=>({gid:t.firstgid, key:'myObjects', frame:t.name})));
 
-    this.cameras.main.setZoom(.3);
+    this.cameras.main.setZoom(.6);
 
     //controls
 
@@ -107,54 +111,13 @@ function create (){
         });
     }, this);
 
-    this.input.addPointer(2);
-    this.input.on('pointerdown', function (pointer) {
-        if (pointer.pointerType === 'touch') {
-            if (this.input.pointer1.isDown && this.input.pointer2.isDown) {
-                this.initialDistance = Phaser.Math.Distance.Between(
-                    this.input.pointer1.x,
-                    this.input.pointer1.y,
-                    this.input.pointer2.x,
-                    this.input.pointer2.y
-                );
-            }
-        }
-    }, this);
-
-    this.input.on('pointermove', function (pointer) {
-        if (pointer.pointerType === 'touch') {
-            if (this.input.pointer1.isDown && this.input.pointer2.isDown) {
-                const newDistance = Phaser.Math.Distance.Between(
-                    this.input.pointer1.x,
-                    this.input.pointer1.y,
-                    this.input.pointer2.x,
-                    this.input.pointer2.y
-                );
-                const delta = newDistance - this.initialDistance;
-                const zoomAmount = delta / 1000;
-                const zoomDuration = 600; // in milliseconds
-                const zoomEase = Phaser.Math.Easing.Cubic.Out; // easing function
-
-                const fromZoom = scene.cameras.main.zoom;
-                const toZoom = Phaser.Math.Clamp(fromZoom + zoomAmount, 0.1, 10); // clamp zoom between 0.1 and 10
-
-                scene.tweens.add({
-                    targets: scene.cameras.main,
-                    zoom: toZoom,
-                    duration: zoomDuration,
-                    ease: zoomEase
-                });
-            }
-        }
-    }, this);
-
     controls = new Phaser.Cameras.Controls.SmoothedKeyControl(controlConfig);
 }
 
     function update (time, delta){
         controls.update(delta);
         // Counteract the zoom of the camera on the sky image
-        sky.setScale(0.7 / this.cameras.main.zoom);
+        sky.setScale(1.3 / this.cameras.main.zoom);
         // Keep the sky centered
         sky.setPosition(this.cameras.main.scrollX + this.cameras.main.width / 2, this.cameras.main.scrollY + this.cameras.main.height / 2);
     }
