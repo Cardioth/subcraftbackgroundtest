@@ -88,6 +88,8 @@ function create (){
     //move behindTerrain2 opposite to camera movement to create parralax effect
     blayer.setScrollFactor(0.5);
 
+
+    
     //additional controls to zoom in and out with mouse wheel
     this.input.on('wheel', function (pointer, gameObjects, deltaX, deltaY, deltaZ) {
         const zoomAmount = deltaY > 0 ? 0.1 : -0.1;
@@ -103,6 +105,47 @@ function create (){
             duration: zoomDuration,
             ease: zoomEase
         });
+    }, this);
+
+    this.input.addPointer(2);
+    this.input.on('pointerdown', function (pointer) {
+        if (pointer.pointerType === 'touch') {
+            if (this.input.pointer1.isDown && this.input.pointer2.isDown) {
+                this.initialDistance = Phaser.Math.Distance.Between(
+                    this.input.pointer1.x,
+                    this.input.pointer1.y,
+                    this.input.pointer2.x,
+                    this.input.pointer2.y
+                );
+            }
+        }
+    }, this);
+
+    this.input.on('pointermove', function (pointer) {
+        if (pointer.pointerType === 'touch') {
+            if (this.input.pointer1.isDown && this.input.pointer2.isDown) {
+                const newDistance = Phaser.Math.Distance.Between(
+                    this.input.pointer1.x,
+                    this.input.pointer1.y,
+                    this.input.pointer2.x,
+                    this.input.pointer2.y
+                );
+                const delta = newDistance - this.initialDistance;
+                const zoomAmount = delta / 1000;
+                const zoomDuration = 600; // in milliseconds
+                const zoomEase = Phaser.Math.Easing.Cubic.Out; // easing function
+
+                const fromZoom = scene.cameras.main.zoom;
+                const toZoom = Phaser.Math.Clamp(fromZoom + zoomAmount, 0.1, 10); // clamp zoom between 0.1 and 10
+
+                scene.tweens.add({
+                    targets: scene.cameras.main,
+                    zoom: toZoom,
+                    duration: zoomDuration,
+                    ease: zoomEase
+                });
+            }
+        }
     }, this);
 
     controls = new Phaser.Cameras.Controls.SmoothedKeyControl(controlConfig);
